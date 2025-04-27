@@ -52,7 +52,7 @@ const eventsData: Event[] = [
     location: "Dehradun, India",
     description: "Won first place in a 48-hour hackathon focused on sustainable technology solutions.",
     fullDescription: "This intensive 48-hour hackathon challenged participants to develop innovative technology solutions addressing sustainability challenges. Our team successfully created a smart waste management system that optimizes collection routes and reduces carbon emissions.",
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    image: "/placeholder.svg",
     highlights: [
       "Led a team of four developers",
       "Developed a full-stack application in 48 hours",
@@ -68,7 +68,7 @@ const eventsData: Event[] = [
     location: "THDC IHET College",
     description: "Conducted a workshop on modern web development technologies for junior students.",
     fullDescription: "I organized and conducted a comprehensive workshop on modern web development technologies for junior students at THDC IHET College. The workshop covered fundamental concepts of HTML, CSS, and JavaScript, as well as an introduction to React and responsive design principles.",
-    images: ["/placeholder.svg"],
+    image: "/placeholder.svg",
     highlights: [
       "Designed workshop curriculum and materials",
       "Conducted hands-on coding sessions",
