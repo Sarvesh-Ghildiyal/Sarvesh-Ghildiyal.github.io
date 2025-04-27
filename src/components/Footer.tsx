@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Linkedin, Twitter, FileText, Discord } from "lucide-react";
+import { Linkedin, Twitter, FileText, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,7 +40,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-primary transition-colors"
             >
-              <Discord className="h-5 w-5" />
+              <MessageCircle className="h-5 w-5" />
             </a>
             <a 
               href="/resume.pdf" 

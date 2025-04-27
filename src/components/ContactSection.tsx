@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Discord } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -36,8 +36,8 @@ const ContactSection = () => {
       link: "https://twitter.com"
     },
     {
-      icon: <Discord className="h-5 w-5" />,
-      label: "Discord",
+      icon: <MessageCircle className="h-5 w-5" />,
+      label: "Chat",
       link: "https://discord.com"
     }
   ];
