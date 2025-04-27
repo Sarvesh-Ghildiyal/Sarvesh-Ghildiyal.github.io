@@ -11,15 +11,15 @@ const AboutSection = () => {
     },
     {
       degree: "12th Grade",
-      institution: "Higher Secondary Education",
-      duration: "Completed",
-      score: ""
+      institution: "Shivedale School",
+      duration: "Completed in 2021",
+      score: "85%"
     },
     {
       degree: "10th Grade",
-      institution: "Secondary Education",
-      duration: "Completed",
-      score: ""
+      institution: "Shivedale School",
+      duration: "Completed in 2019",
+      score: "88.4%"
     }
   ];
 

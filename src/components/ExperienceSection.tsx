@@ -31,24 +31,24 @@ const ExperienceSection = () => {
         
         <div className="max-w-3xl mx-auto">
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+            {/* Timeline line - hidden on mobile */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 hidden md:block"></div>
             
             {/* Experience items */}
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative">
-                  {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -mt-2">
+                  {/* Timeline dot - centered on mobile */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 -mt-2 flex items-center justify-center">
                     <div className="bg-white p-1 rounded-full border-2 border-primary">
                       <Briefcase className="h-5 w-5 text-primary" />
                     </div>
                   </div>
                   
                   {/* Experience card */}
-                  <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                     {/* Date */}
-                    <div className="md:w-1/2 flex justify-center md:justify-end md:pr-8 pb-4 md:pb-0">
+                    <div className="md:w-1/2 flex justify-center md:justify-end md:pr-8 pb-4 md:pb-0 pt-8 md:pt-0">
                       <div className="md:text-right">
                         <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                           {exp.period}
