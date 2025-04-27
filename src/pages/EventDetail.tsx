@@ -4,6 +4,13 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface Event {
   id: string;
@@ -12,7 +19,7 @@ interface Event {
   location: string;
   description: string;
   fullDescription: string;
-  image: string;
+  images: string[];
   highlights: string[];
   outcomes?: string;
 }
@@ -26,7 +33,11 @@ const eventsData: Event[] = [
     location: "Virtual Event",
     description: "Participated in a tech conference focused on emerging technologies.",
     fullDescription: "This tech conference brought together industry leaders and innovators to discuss the latest trends and developments in technology. I had the opportunity to attend sessions on AI, blockchain, and cloud computing, gaining valuable insights into these cutting-edge fields.",
-    image: "/placeholder.svg",
+    images: [
+      "/placeholder.svg",
+      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      "https://images.unsplash.com/photo-1500673922987-e212871fec22"
+    ],
     highlights: [
       "Attended workshops on AI and machine learning",
       "Networked with industry professionals",
@@ -116,12 +127,24 @@ const EventDetail = () => {
         </Button>
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="h-64 sm:h-80 overflow-hidden">
-            <img 
-              src={event.image} 
-              alt={event.title} 
-              className="w-full h-full object-cover"
-            />
+          <div className="relative">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {event.images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="h-64 sm:h-80 w-full overflow-hidden">
+                      <img 
+                        src={image} 
+                        alt={`${event.title} - Image ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
           </div>
           
           <div className="p-6 sm:p-8">
