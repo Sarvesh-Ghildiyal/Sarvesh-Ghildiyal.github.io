@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Linkedin, Twitter, MessageCircle } from "lucide-react";
 
@@ -7,19 +6,19 @@ const ContactSection = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "vivekrajuv18@gmail.com",
-      link: "mailto:vivekrajuv18@gmail.com"
+      value: "sarveshghildiyal@gmail.com",
+      link: "mailto:sarveshghildiyal@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+91-975411134",
-      link: "tel:+91975411134"
+      value: "+91 7017348970",
+      link: "tel:+917017348970"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "Bengaluru, India",
+      value: "Haridwar, India",
       link: null
     }
   ];
