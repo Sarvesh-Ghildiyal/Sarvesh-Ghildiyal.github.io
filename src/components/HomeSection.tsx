@@ -1,10 +1,11 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ParticleBackground from "./ParticleBackground";
 
 const HomeSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-b from-background to-secondary/20">
+      <ParticleBackground />
       <div className="container-section relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 animate-fade-up">
