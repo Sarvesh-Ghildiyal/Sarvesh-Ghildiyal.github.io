@@ -8,20 +8,23 @@ const ExperienceSection = () => {
       position: "R&D Team Member",
       company: "Decube Innovation Labs",
       period: "Dec 2024 – Present",
-      description: "Working on research and development of innovative technology solutions."
+      description:
+        "Contributing to early-stage product development, and delivering client solutions in an evolving startup environment.",
     },
     {
       position: "Full Stack Developer",
       company: "Vervegen Tech Pvt Ltd",
       period: "Jun 2024 – Sep 2024",
-      description: "Developed and maintained web applications using modern technologies."
+      description:
+        "Built and maintained web applications, improved workflows, and supported secure deployments",
     },
     {
       position: "Virtual Lab Developer Intern",
       company: "Virtual Labs, IIT Roorkee",
       period: "Jun 2024 – Sep 2024",
-      description: "Contributed to the development of virtual laboratory simulations for educational purposes."
-    }
+      description:
+        "Contributed to the development of virtual laboratory simulations for educational purposes.",
+    },
   ];
 
   return (
