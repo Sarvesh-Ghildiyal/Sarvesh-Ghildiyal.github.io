@@ -34,12 +34,12 @@ const ParticleBackground = () => {
     const BUBBLE_COUNT = Math.min(Math.max(15, window.innerWidth / 30), 40);
     
     // Soap bubble colors - more iridescent and translucent
-    const BUBBLE_COLORS = [
-      'rgba(255, 255, 255, 0.4)', // Translucent white
-      'rgba(240, 255, 255, 0.3)', // Very light cyan
-      'rgba(230, 255, 250, 0.35)', // Light azure
-      'rgba(255, 250, 240, 0.3)', // Light ivory
-    ];
+   const BUBBLE_COLORS = [
+     "rgba(173, 216, 230, 0.4)", // Light Blue (like sky water vibe)
+     "rgba(200, 230, 255, 0.3)", // Softer baby blue
+     "rgba(220, 240, 255, 0.35)", // Faint pastel blue
+     "rgba(180, 220, 250, 0.25)", // Slightly deeper light blue
+   ];
 
     // Initialize bubbles
     for (let i = 0; i < BUBBLE_COUNT; i++) {
