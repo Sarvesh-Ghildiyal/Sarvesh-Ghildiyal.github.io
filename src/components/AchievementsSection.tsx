@@ -163,8 +163,8 @@ const AchievementsSection = () => {
                             ))}
                           </CarouselContent>
                           <div className="hidden md:block">
-                            <CarouselPrevious className="-left-12" />
-                            <CarouselNext className="-right-12" />
+                            <CarouselPrevious className="left-2" />
+                            <CarouselNext className="right-2" />
                           </div>
                           <div className="md:hidden">
                             <CarouselPrevious className="left-0 bg-background/80 backdrop-blur-sm" />
