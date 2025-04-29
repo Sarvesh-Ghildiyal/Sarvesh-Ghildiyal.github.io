@@ -34,6 +34,9 @@ const AchievementsSection = () => {
         "/lovable-uploads/147e9355-9461-4037-92ec-a924e6ae7144.png",
         "/lovable-uploads/66b296db-9938-4afd-ac98-36e932eed886.png",
         "/lovable-uploads/264eff14-8618-4d48-ad88-2528dab9120a.png",
+        "/lovable-uploads/5870d59d-163a-426f-a64f-2e0ce8f861e3.png",
+        "/lovable-uploads/3dd3e71f-00c1-49e8-a84b-b03a95f53ff3.png",
+        "/lovable-uploads/c17fc688-460b-44a1-897a-16301ba7707b.png"
       ],
     },
     {
@@ -122,32 +125,40 @@ const AchievementsSection = () => {
                       <p className="text-gray-700 mb-6">{achievement.description}</p>
 
                       {/* Image Carousel */}
-                      <Carousel
-                        opts={{
-                          loop: true,
-                          align: "start",
-                        }}
-                        className="w-full"
-                      >
-                        <CarouselContent>
-                          {achievement.images.map((image, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
-                              <div className="p-1 h-full">
-                                <div className="overflow-hidden rounded-lg bg-secondary/30 border border-secondary h-[300px]">
-                                  <img
-                                    src={image}
-                                    alt={`${achievement.title} - Image ${index + 1}`}
-                                    className="w-full h-full object-cover transition-transform hover:scale-105"
-                                    loading="lazy"
-                                  />
+                      <div className="relative">
+                        <Carousel
+                          opts={{
+                            loop: true,
+                            align: "start",
+                          }}
+                          className="w-full"
+                        >
+                          <CarouselContent>
+                            {achievement.images.map((image, index) => (
+                              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                                <div className="p-1 h-full">
+                                  <div className="overflow-hidden rounded-lg bg-secondary/30 border border-secondary h-[300px]">
+                                    <img
+                                      src={image}
+                                      alt={`${achievement.title} - Image ${index + 1}`}
+                                      className="w-full h-full object-cover transition-transform hover:scale-105"
+                                      loading="lazy"
+                                    />
+                                  </div>
                                 </div>
-                              </div>
-                            </CarouselItem>
-                          ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="lg:-left-12 left-1" />
-                        <CarouselNext className="lg:-right-12 right-1" />
-                      </Carousel>
+                              </CarouselItem>
+                            ))}
+                          </CarouselContent>
+                          <div className="hidden md:block">
+                            <CarouselPrevious className="-left-12" />
+                            <CarouselNext className="-right-12" />
+                          </div>
+                          <div className="md:hidden">
+                            <CarouselPrevious className="left-0 bg-background/80 backdrop-blur-sm" />
+                            <CarouselNext className="right-0 bg-background/80 backdrop-blur-sm" />
+                          </div>
+                        </Carousel>
+                      </div>
                     </div>
                   ))}
               </>
