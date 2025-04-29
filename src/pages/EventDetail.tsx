@@ -159,6 +159,7 @@ const EventDetail = () => {
                         src={image}
                         alt={`${event.title} - Image ${index + 1}`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                   </CarouselItem>
