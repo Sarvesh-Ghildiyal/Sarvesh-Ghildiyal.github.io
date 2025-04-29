@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       title: "Skia Coffee Client Project",
       description:
         "Delivered the Skia Coffee solution through a web application that enabled real-time order tracking and inventory updates, seamlessly integrated across both Android & iOS apps and the admin portal.",
-      image: "/images/skia-coffee.png",
+      image: "/images/skia-coffee.jpeg",
       technologies: [
         "Vue.js",
         "Firebase (Auth, Hosting, Functions)",
@@ -21,31 +21,29 @@ const ProjectsSection = () => {
     },
     {
       id: "project2",
-      title: "Project Two",
-      description: "A brief description of project two and its objectives.",
+      title: "Cieszyc Web App",
+      description:
+        "Developed and launched a website with a friend for a college fest, serving 600+ attendees, featuring ticketing, event schedules, andsubmission forms for event participation and payment.",
       image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      technologies: ["Laravel PHP", "Guzzle", "Spatie", "Tailwind CSS"],
     },
     {
       id: "project3",
-      title: "Project Three",
-      description: "A brief description of project three and its objectives.",
+      title: "Complaint Management System",
+      description:
+        "Delivered a Complaint Management System web app that digitized administrative workflows and reduced paperwork, marking the start of my development journey and evolving from Laravel to a reimagined Remix.js implementation.",
       image: "/placeholder.svg",
-      technologies: ["React Native", "Firebase", "Redux"],
-    },
-    {
-      id: "project4",
-      title: "Project Four",
-      description: "A brief description of project four and its objectives.",
-      image: "/placeholder.svg",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
-    },
-    {
-      id: "project5",
-      title: "Project Five",
-      description: "A brief description of project five and its objectives.",
-      image: "/placeholder.svg",
-      technologies: ["Angular", "Django", "AWS"],
+      technologies: [
+        "Laravel",
+        "PHP",
+        "Remix.js",
+        "JavaScript",
+        "LAMP",
+        "MySQL",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Vanilla CSS",
+      ],
     },
   ];
 

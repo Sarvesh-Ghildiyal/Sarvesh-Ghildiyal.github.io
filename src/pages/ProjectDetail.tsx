@@ -98,62 +98,109 @@ const projectsData: Project[] = [
 `,
     videoId: "dQw4w9WgXcQ", // Optional, if you have a YouTube video showcasing the project
   },
-  // {
-  //   id: "project2",
-  //   title: "Project Two",
-  //   purpose:
-  //     "This project was created to demonstrate modern web development practices and create an accessible user interface.",
-  //   image: "/placeholder.svg",
-  //   technologies: [
-  //     "Next.js",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "Prisma",
-  //     "PostgreSQL",
-  //   ],
-  //   journey:
-  //     "I started with wireframing the UI and planning the architecture. The development process involved setting up the Next.js project, designing the database schema, and implementing the core features. Testing and optimization were key parts of the final stages.",
-  //   videoId: "dQw4w9WgXcQ", // YouTube video ID
-  // },
-  // {
-  //   id: "project3",
-  //   title: "Project Three",
-  //   purpose:
-  //     "The goal was to create a cross-platform mobile app that offers real-time synchronization and offline capability.",
-  //   image: "/placeholder.svg",
-  //   technologies: [
-  //     "React Native",
-  //     "Firebase",
-  //     "Redux",
-  //     "Jest",
-  //     "GitHub Actions",
-  //   ],
-  //   journey:
-  //     "The development journey involved learning React Native, setting up the Firebase backend, and implementing complex state management. Challenges included optimizing performance for low-end devices and ensuring data consistency.",
-  //   videoId: "dQw4w9WgXcQ", // YouTube video ID
-  // },
-  // {
-  //   id: "project4",
-  //   title: "Project Four",
-  //  purpose:
-  //     "This project aimed to provide a scalable solution for managing complex data relationships and user interactions.",
-  //   image: "/placeholder.svg",
-  //   technologies: ["Vue.js", "Express", "PostgreSQL", "Docker", "AWS"],
-  //   journey:
-  //     "The development process started with defining the data models and API endpoints. The frontend was built with Vue.js, focusing on reusable components and state management. Deployment was handled through containerization with Docker and AWS services.",
-  //   videoId: "dQw4w9WgXcQ", // YouTube video ID
-  // },
-  // {
-  //   id: "project5",
-  //   title: "Project Five",
-  //   purpose:
-  //     "The purpose was to build a highly available and fault-tolerant system that can handle various workloads.",
-  //   image: "/placeholder.svg",
-  //   technologies: ["Angular", "Django", "AWS", "Kubernetes", "Terraform"],
-  //   journey:
-  //     "This project required extensive planning for the infrastructure and application architecture. I implemented CI/CD pipelines, configured Kubernetes clusters, and ensured proper monitoring and logging throughout the system.",
-  //   videoId: "dQw4w9WgXcQ", // YouTube video ID
-  // },
+  {
+    id: "project2",
+    title: "Project Two",
+    purpose: `
+  <strong>Cieszyc 2024</strong> was our college’s first fest after a gap of nearly five years — delayed due to COVID and other administrative reasons. 
+  The preparations were electric, and as part of the organizing effort, a dedicated <strong>web app</strong> was needed to handle <strong>ticketing, event schedules</strong>, 
+  and <strong>submission forms</strong> for event participation and payment.
+  <br><br>
+  The fest committee collaborated with <strong>Spiders.co.in</strong>, a company run by an alumnus from the 2020 batch. 
+  They provided the backend support but needed someone on the ground to implement college-specific requirements. 
+  That’s where <strong>Ravinder</strong> and I came in — known in our college circles for our development work and being the only two familiar with <strong>Laravel</strong>, the framework the project was built on.
+`,
+
+    image: "/placeholder.svg",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    journey: `
+  We were provided with a Laravel-based project template and a shared hosting account by Spiders.co.in. 
+  From there, <strong>Ravinder and I</strong> dove into the prewritten codebase, analyzing, modifying, and extending it to suit our fest's unique needs. 
+  <br><br>
+  The timeline was tight — within a week, we had to <strong>understand unfamiliar code</strong>, <strong>gather functional requirements</strong>, and 
+  <strong>implement new features</strong> without compromising stability.
+  <br><br>
+  Despite the crunch, we delivered. One personal milestone during this phase was resolving a bug in the existing <strong>navigation bar logic</strong>. 
+  Though not critical, I noticed a flaw in how routes were being handled — written by someone already in the software industry. 
+  Fixing that gave me a real sense of accomplishment.
+`,
+
+    hurdles: `
+  Surprisingly, there were no major roadblocks. I genuinely <em>enjoyed</em> working on this — contributing something tangible for my college. 
+  It felt personal, and in many ways, it reinforced my passion for building things that matter. 
+  <br><br>
+  This experience helped shape who I am today, not just as a developer but as someone who enjoys delivering under pressure, for a cause that means something.
+`,
+    future: `
+  With the fest concluded during our <strong>seventh semester</strong>, we’ve handed off the baton to our juniors. 
+  Our work laid a foundation — a tradition, even — for how digital infrastructure around college events can be handled going forward. 
+  <br><br>
+  While our direct involvement may no longer be needed, I remain open to helping in the future, should the next team ever need guidance.
+`,
+    videoId: "dQw4w9WgXcQ", // YouTube video ID
+  },
+  {
+    id: "project3",
+    title: "Project Three",
+    purpose: `
+  During my early days in college, eager to learn and build something meaningful, my assistant professor approached me with a project. 
+  He asked, “Sarvesh, can you and your friends deliver this to a client?” I said yes — even though my seniors did the actual delivery, and I had little knowledge of development.
+  <br><br>
+  As a follow-up, he offered me a college-level internal project. Not wanting to lose the opportunity, I said yes again — and so began my journey into <strong>Laravel</strong>.
+`,
+    image: "/placeholder.svg",
+    technologies: [
+      "React Native",
+      "Firebase",
+      "Redux",
+      "Jest",
+      "GitHub Actions",
+    ],
+    journey: `
+  This was my <strong>first real project</strong>. I lacked the skillset to handle it on my own and initially relied on a senior who claimed to know Laravel. 
+  We sat down once, produced no results, and eventually, he vanished from the picture. The responsibility, however, remained squarely on my shoulders.
+  <br><br>
+  I attempted to seek help from peers, but being in the second year, no one around me was equipped to handle Laravel. 
+  Still, I didn’t back down. I reached out to contacts at <strong>Colored Cow</strong>, an incubation group on campus known for working with Laravel. 
+  I had joined them earlier for a short internship and training — and remembered <strong>Laracasts</strong>.
+  <br><br>
+  So I began — from scratch — diving deep into Laravel documentation, watching tutorials, and experimenting with every line of code. 
+  That decision, although lonely and uncertain at first, became the defining point of my development career.
+`,
+    hurdles: `
+  The hurdles were plenty. I had no guidance, no collaborative team, and no prior exposure to Laravel or MVC architecture.
+  But those very constraints became my biggest teachers. I learned <strong>routing, controllers, database interactions, middleware, authentication, authorization</strong> — 
+  and yes, what <strong>Spatie</strong> packages are and why they matter.
+  <br><br>
+  I also explored frontend tools like <strong>vanilla CSS</strong>, <strong>Bootstrap</strong>, and <strong>Tailwind</strong>, integrating them into the project.
+  The system required <strong>role-based access control</strong>, so I had to study how Laravel handles user roles, guards, and policies.
+  <br><br>
+  Despite the struggle, I managed to deliver a minimal working prototype — and gained a deep, working knowledge of how robust web applications are built.
+  <br><br>
+  One insight I appreciated: Laravel surfaces the structure. It makes you aware of everything — unlike some JS stacks that hide complexity under convention.
+`,
+    future: `
+  Looking back, I should have pursued a deeper internship with <strong>Colored Cow</strong>. It would’ve helped me accelerate, but hindsight is always clear.
+  Still, the road I took shaped me — no regrets.
+  <br><br>
+  After delivering the MVP in Laravel, I was introduced to <strong>blockchain</strong> development. That led me into <strong>JavaScript</strong> — a domain I hadn’t touched yet.
+  <br><br>
+  Even to this day, I somehow remain a <strong>full-stack JavaScript developer</strong>, yet to get my hands truly dirty with blockchain development.
+  <br><br>
+  Soon after, I discovered <strong>RemixJS</strong>. I chose it over Next.js simply because its routing style felt familiar — reminiscent of Laravel. 
+  This allowed me to <strong>rebuild the entire CMS</strong> in Remix, applying my Laravel experience to a JS ecosystem.
+  <br><br>
+  The switch between stacks wasn’t overwhelming because I had a strong foundation in <strong>C programming and DSA</strong> from my first year. 
+  That logical base helped me adapt across paradigms.
+`,
+    videoId: "dQw4w9WgXcQ", // YouTube video ID
+  },
 ];
 
 const ProjectDetail = () => {
