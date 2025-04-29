@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -7,35 +6,42 @@ const EventsSection = () => {
   const events = [
     {
       id: "event1",
-      title: "Tech Conference 2024",
-      date: "May 15, 2024",
-      location: "Virtual Event",
-      description: "Participated in a tech conference focused on emerging technologies."
+      title: "Chainlink Bootcamps",
+      date: "16 Dec 2022; 28–29 Mar 2023; 23 Sept 2023",
+      location: "THDC-IHET, New Tehri & Graphic Era Hill University, Dehradun",
+      description:
+        "Conducted Web3 workshops on blockchain and smart contract development, funded by Chainlink.",
     },
     {
       id: "event2",
-      title: "Hackathon Winner",
-      date: "April 3-5, 2024",
-      location: "Dehradun, India",
-      description: "Won first place in a 48-hour hackathon focused on sustainable technology solutions."
+      title: "Hackathon at UPES",
+      date: "February 2022",
+      location: "UPES, Dehradun",
+      description:
+        "Led a beginner team in my first-ever 48-hour hackathon and emerged victorious with a real-world sustainability solution.",
     },
     {
       id: "event3",
-      title: "Workshop: Web Development",
-      date: "March 12, 2024",
+      title: "Hello World Beginning",
+      date: "March 2024",
       location: "THDC IHET College",
-      description: "Conducted a workshop on modern web development technologies for junior students."
-    }
+      description:
+        "Initiated the foundation of a college tech club to give back and uplift the next batch of learners.",
+    },
   ];
 
   return (
     <section id="events">
       <div className="container-section">
         <h2 className="section-heading">Events & Activities</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map((event) => (
-            <Link key={event.id} to={`/event/${event.id}`} className="no-underline">
+            <Link
+              key={event.id}
+              to={`/event/${event.id}`}
+              className="no-underline"
+            >
               <Card className="h-full border border-gray-200 hover:border-primary/50 hover:shadow-md transition-all flex flex-col">
                 <CardContent className="flex-1 p-5">
                   <div className="flex items-center gap-2 text-primary mb-3">

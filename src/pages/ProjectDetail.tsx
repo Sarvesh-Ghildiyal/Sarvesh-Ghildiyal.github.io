@@ -33,7 +33,7 @@ const projectsData: Project[] = [
   <br><br>
   After understanding his needs, we aligned on building a <strong>comprehensive digital solution</strong> tailored specifically for his business.
 `,
-    image: "/images/skia-coffee.png",
+    image: "/images/skia-coffee.jpeg",
     technologies: [
       "Vue.js",
       "Firebase (Auth, Hosting, Functions)",
@@ -100,7 +100,7 @@ const projectsData: Project[] = [
   },
   {
     id: "project2",
-    title: "Project Two",
+    title: "Cieszyc Web App",
     purpose: `
   <strong>Cieszyc 2024</strong> was our college’s first fest after a gap of nearly five years — delayed due to COVID and other administrative reasons. 
   The preparations were electric, and as part of the organizing effort, a dedicated <strong>web app</strong> was needed to handle <strong>ticketing, event schedules</strong>, 
@@ -111,7 +111,7 @@ const projectsData: Project[] = [
   That’s where <strong>Ravinder</strong> and I came in — known in our college circles for our development work and being the only two familiar with <strong>Laravel</strong>, the framework the project was built on.
 `,
 
-    image: "/placeholder.svg",
+    image: "/images/cieszyc.png",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -147,14 +147,14 @@ const projectsData: Project[] = [
   },
   {
     id: "project3",
-    title: "Project Three",
+    title: "Complaint Managment System",
     purpose: `
   During my early days in college, eager to learn and build something meaningful, my assistant professor approached me with a project. 
   He asked, “Sarvesh, can you and your friends deliver this to a client?” I said yes — even though my seniors did the actual delivery, and I had little knowledge of development.
   <br><br>
   As a follow-up, he offered me a college-level internal project. Not wanting to lose the opportunity, I said yes again — and so began my journey into <strong>Laravel</strong>.
 `,
-    image: "/placeholder.svg",
+    image: "/images/cms.png",
     technologies: [
       "React Native",
       "Firebase",

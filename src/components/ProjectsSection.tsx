@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       title: "Cieszyc Web App",
       description:
         "Developed and launched a website with a friend for a college fest, serving 600+ attendees, featuring ticketing, event schedules, andsubmission forms for event participation and payment.",
-      image: "/placeholder.svg",
+      image: "/images/cieszyc.png",
       technologies: ["Laravel PHP", "Guzzle", "Spatie", "Tailwind CSS"],
     },
     {
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       title: "Complaint Management System",
       description:
         "Delivered a Complaint Management System web app that digitized administrative workflows and reduced paperwork, marking the start of my development journey and evolving from Laravel to a reimagined Remix.js implementation.",
-      image: "/placeholder.svg",
+      image: "/images/cms.png",
       technologies: [
         "Laravel",
         "PHP",

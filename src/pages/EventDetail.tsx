@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Calendar, MapPin } from "lucide-react";
@@ -28,55 +27,78 @@ interface Event {
 const eventsData: Event[] = [
   {
     id: "event1",
-    title: "Tech Conference 2024",
-    date: "May 15, 2024",
-    location: "Virtual Event",
-    description: "Participated in a tech conference focused on emerging technologies.",
-    fullDescription: "This tech conference brought together industry leaders and innovators to discuss the latest trends and developments in technology. I had the opportunity to attend sessions on AI, blockchain, and cloud computing, gaining valuable insights into these cutting-edge fields.",
+    title: "Chainlink Bootcamps & Web3 Workshops",
+    date: "16 Dec 2022; 28–29 Mar 2023; 23 Sept 2023",
+    location: "THDC-IHET, New Tehri & Graphic Era Hill University, Dehradun",
+    description:
+      "Organized and led Chainlink-funded Web3 workshops across multiple institutions.",
+    fullDescription:
+      "<p><strong>Led and organized</strong> a series of <em>Chainlink-sponsored Web3 bootcamps</em>, addressing audiences of over <u>250 attendees</u> across three major events. Initially managed and conducted sessions in my home institution, THDC-IHET, progressing to a more complex logistical challenge of hosting and managing the final event at <strong>Graphic Era Hill University</strong>. This required <em>remote coordination, active troubleshooting</em>, and managing a dynamic team in real time. On the final day, I delivered live sessions, handled technical queries on-the-spot, and ensured a seamless learning experience for participants. <em>This series of events shaped not only my professional competence but also refined my leadership and communication skills.</em></p>",
     images: [
-      "/placeholder.svg",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      "https://images.unsplash.com/photo-1500673922987-e212871fec22"
+      "/images/events/event1/1.jpg",
+      "/images/events/event1/2.jpg",
+      "/images/events/event1/3.jpg",
+      "/images/events/event1/10.jpg",
+      "/images/events/event1/4.jpg",
+      "/images/events/event1/5.jpg",
+      "/images/events/event1/6.jpg",
+      "/images/events/event1/7.jpg",
+      "/images/events/event1/8.jpg",
+      "/images/events/event1/9.jpg",
+      "/images/events/event1/meetup1.jpeg",
+      "/images/events/event1/meetup2.jpg",
     ],
     highlights: [
-      "Attended workshops on AI and machine learning",
-      "Networked with industry professionals",
-      "Gained insights into emerging tech trends"
+      "<strong>Event 1 – THDC-IHET:</strong> Spoke on the evolution from Web2 to Web3, introduced blockchain fundamentals to 50+ students; a truly memorable start.",
+      "<strong>Event 2 – THDC-IHET with UPES Webcrux:</strong> Delivered sessions on blockchain architecture and the role of <em>oracles</em> in smart contracts.",
+      "<strong>Event 3 – Graphic Era Hill University:</strong> Addressed an external audience on <em>test networks (Sepolia)</em>, <em>consensus mechanisms</em> (PoW, PoS), wallet fundamentals, and mentored hands-on smart contract deployment.",
     ],
-    outcomes: "The knowledge gained from this conference has been instrumental in shaping my approach to current and future projects, particularly in implementing AI-driven solutions."
+    outcomes:
+      "<p>Gained <strong>substantial real-world experience</strong> in <em>event management, public speaking, and team coordination</em>. Beyond the technical and organizational growth, I had the privilege of meeting <strong>inspiring individuals</strong>, forging meaningful connections, and <em>immersing myself in a vibrant ecosystem of ideas and aspirations</em>. These experiences <u>reshaped my worldview</u>, broadened my horizons, and kindled a deeper sense of purpose — they didn’t just teach me how to build, they taught me how to dream.</p>",
   },
   {
     id: "event2",
-    title: "Hackathon Winner",
-    date: "April 3-5, 2024",
+    title: "Hackathon",
+    date: "Feburary 2022",
     location: "Dehradun, India",
-    description: "Won first place in a 48-hour hackathon focused on sustainable technology solutions.",
-    fullDescription: "This intensive 48-hour hackathon challenged participants to develop innovative technology solutions addressing sustainability challenges. Our team successfully created a smart waste management system that optimizes collection routes and reduces carbon emissions.",
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    description:
+      "Led a beginner team in my first-ever 48-hour hackathon and emerged victorious with a real-world sustainability solution.",
+    fullDescription:
+      "<p>This was my <strong>first-ever hackathon experience</strong>, held at UPES, and it unfolded on the insistence of a senior, Balendu, who encouraged me to participate despite my limited development knowledge. That invitation turned into a pivotal moment — I took on the role of team leader, and we successfully passed the initial selection round. Spending the night on a different campus, collaborating intensively to transform our idea into a viable solution, remains <em>one of the most formative experiences</em> of my early career. It wasn’t just about coding — it was about learning how to work under pressure, trust a team, and believe in potential before perfection.</p>",
+    images: ["/images/events/event2/2.jpeg", "/images/events/event2/3.jpg"],
     highlights: [
-      "Led a team of four developers",
-      "Developed a full-stack application in 48 hours",
-      "Implemented IoT integration for waste bin monitoring",
-      "Won first place among 25 competing teams"
+      "First hackathon experience for the entire team — we stepped in with curiosity, not credentials",
+      "Led a team of complete beginners, learning and building everything from scratch",
+      "Discovered the open, collaborative, and welcoming culture of hackathons",
+      "Bonded over late-night brainstorming, debugging, and shared imposter syndrome",
+      "Formed lasting connections and memories that transcended the competition itself",
     ],
-    outcomes: "Winning this hackathon provided validation for our innovative approach and opened doors to potential partnerships with local municipalities interested in implementing our solution."
+    outcomes:
+      "<p>A <strong>beautiful memory</strong> of shared curiosity, late-night laughter, and spontaneous learning. It was less about winning and more about the joy of building something together — an experience that still brings a smile whenever I think back to it.</p>",
   },
   {
     id: "event3",
-    title: "Workshop: Web Development",
-    date: "March 12, 2024",
+    title: "Hello World Beginning",
+    date: "March 2024",
     location: "THDC IHET College",
-    description: "Conducted a workshop on modern web development technologies for junior students.",
-    fullDescription: "I organized and conducted a comprehensive workshop on modern web development technologies for junior students at THDC IHET College. The workshop covered fundamental concepts of HTML, CSS, and JavaScript, as well as an introduction to React and responsive design principles.",
-    images: ["/placeholder.svg"],
-    highlights: [
-      "Designed workshop curriculum and materials",
-      "Conducted hands-on coding sessions",
-      "Mentored students on their first web projects",
-      "Received excellent feedback from participants"
+    description:
+      "Initiated the foundation of a college tech club to give back and uplift the next batch of learners.",
+    fullDescription:
+      "<p>This was the <strong>starting point of our tech community</strong> at THDC IHET. I initiated the idea with a desire to contribute back to the college ecosystem that shaped me. The journey involved <em>planning the structure, curriculum, and long-term vision</em> for a self-sustaining club. I collaborated with peers, held meetings with our Head of Department and Director Sir, and worked on aligning the initiative with the department's goals. The energy, the intent, and the discussions — they all remain <u>deeply etched</u> in my memory.</p>",
+    images: [
+      "/images/events/event3/logo.jpeg",
+      "/images/events/event3/one.jpeg",
+      "/images/events/event3/two.jpeg",
+      "/images/events/event3/flyer.png",
     ],
-    outcomes: "The workshop successfully introduced over 50 students to web development, with many continuing to build their skills and create their own projects afterward."
-  }
+    highlights: [
+      "Planned initial community structure and roadmap",
+      "Met with college officials and aligned the vision",
+      "Focused on mentorship, continuity, and peer development",
+    ],
+    outcomes:
+      "<p><em>Even though it didn’t evolve into the club I envisioned,</em> the experience remains special. It was <strong>a beautiful attempt to give back</strong>, and the people, effort, and intent behind it will always stay with me.</p>",
+  },
 ];
 
 const EventDetail = () => {
@@ -87,8 +109,8 @@ const EventDetail = () => {
   useEffect(() => {
     // Simulate data fetching
     setLoading(true);
-    const foundEvent = eventsData.find(e => e.id === id) || null;
-    
+    const foundEvent = eventsData.find((e) => e.id === id) || null;
+
     // Simulate loading delay
     setTimeout(() => {
       setEvent(foundEvent);
@@ -133,8 +155,8 @@ const EventDetail = () => {
                 {event.images.map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="h-64 sm:h-80 w-full overflow-hidden">
-                      <img 
-                        src={image} 
+                      <img
+                        src={image}
                         alt={`${event.title} - Image ${index + 1}`}
                         className="w-full h-full object-cover"
                       />
@@ -146,45 +168,57 @@ const EventDetail = () => {
               <CarouselNext className="right-4" />
             </Carousel>
           </div>
-          
+
           <div className="p-6 sm:p-8">
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <div className="flex items-center gap-2 text-primary">
                 <Calendar className="h-4 w-4" />
                 <span>{event.date}</span>
               </div>
-              
+
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="h-4 w-4" />
                 <span>{event.location}</span>
               </div>
             </div>
-            
+
             <h1 className="text-3xl font-bold mb-6">{event.title}</h1>
-            
+
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Event Overview</h2>
-              <p className="text-gray-700">{event.fullDescription}</p>
+              {/* <p className="text-gray-700">{event.fullDescription}</p> */}
+              <div
+                className="text-gray-700 space-y-4"
+                dangerouslySetInnerHTML={{ __html: event.fullDescription }}
+              />
             </section>
-            
+
             <Separator className="my-6" />
-            
+
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Key Highlights</h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 {event.highlights.map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
+                  // <li key={index}>{highlight}</li>
+                  <li
+                    key={index}
+                    dangerouslySetInnerHTML={{ __html: highlight }}
+                  />
                 ))}
               </ul>
             </section>
-            
+
             {event.outcomes && (
               <>
                 <Separator className="my-6" />
-                
+
                 <section>
                   <h2 className="text-xl font-semibold mb-3">Outcomes</h2>
-                  <p className="text-gray-700">{event.outcomes}</p>
+                  {/* <p className="text-gray-700">{event.outcomes}</p> */}
+                  <div
+                    className="text-gray-700 space-y-4"
+                    dangerouslySetInnerHTML={{ __html: event.outcomes }}
+                  />
                 </section>
               </>
             )}

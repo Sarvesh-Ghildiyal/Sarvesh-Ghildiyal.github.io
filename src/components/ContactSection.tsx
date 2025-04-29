@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Linkedin, Twitter, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, MessageCircle } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6"; // for the X (Twitter) logo
+import { RiDiscordLine } from "react-icons/ri";
+
 
 const ContactSection = () => {
   const contactInfo = [
@@ -27,18 +30,20 @@ const ContactSection = () => {
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      link: "https://linkedin.com"
+      link: "https://www.linkedin.com/in/sarvesh-ghildiyal-6646b722b/",
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      link: "https://twitter.com"
+      // icon: <Twitter className="h-5 w-5" />,
+      icon: <FaXTwitter />,
+      label: "X",
+      link: "https://twitter.com/ghildiyal_sarv",
     },
     {
-      icon: <MessageCircle className="h-5 w-5" />,
+      // icon: <MessageCircle className="h-5 w-5" />,
+      icon: <RiDiscordLine />,
       label: "Chat",
-      link: "https://discord.com"
-    }
+      link: "https://discord.com/users/sarvesh0925",
+    },
   ];
 
   return (

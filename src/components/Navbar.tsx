@@ -66,7 +66,7 @@ const Navbar = () => {
               ))}
               <Button size="sm" className="ml-4 flex items-center gap-2">
                 <FileText className="h-4 w-4" />
-                <a href="/resume.pdf" download>Resume</a>
+                <a href="/Sarvesh-Ghildiyal-Resume.pdf" download>Resume</a>
               </Button>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href="/Sarvesh-Ghildiyal-Resume.pdf"
               download
               onClick={closeMenu}
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary"
