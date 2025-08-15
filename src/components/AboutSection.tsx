@@ -5,9 +5,9 @@ const AboutSection = () => {
     {
       degree: "B.Tech in Computer Science Engineering",
       institution:
-        "THDC IHET College, Tehri | Affiliated to UTU, Dehradun",
-      duration: "2021 - Present (Expected Aug 2025)",
-      score: "70% (Till 6th Sem)",
+        "THDC IHET College, Tehri | Affiliated to VMSBUTU, Dehradun",
+      duration: "2021 - 2025",
+      score: "71%",
     },
     {
       degree: "12th Grade",

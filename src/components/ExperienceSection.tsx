@@ -4,8 +4,14 @@ import { Briefcase } from "lucide-react";
 
 const ExperienceSection = () => {
   const experiences = [
+     {
+      position: "Backend Engineer",
+      company: "Wingify",
+      period: "July 2025 – Present",
+      description:"Started as a Backend Engineer." 
+     },
     {
-      position: "R&D Team Member",
+      position: "R&D Team Contributor",
       company: "Decube Innovation Labs",
       period: "Dec 2024 – Present",
       description:
