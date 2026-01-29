@@ -41,17 +41,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
-      }`}
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="text-lg font-bold text-primary">SG</Link>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-6">
@@ -70,7 +69,7 @@ const Navbar = () => {
               </Button>
             </div>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -107,7 +106,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/Sarvesh-Ghildiyal-Resume.pdf"
+              href="/Sarvesh_Ghildiyal_Resume_CV.pdf"
               download
               onClick={closeMenu}
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary"
