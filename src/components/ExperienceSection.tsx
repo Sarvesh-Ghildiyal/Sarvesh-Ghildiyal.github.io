@@ -4,16 +4,16 @@ import { Briefcase } from "lucide-react";
 
 const ExperienceSection = () => {
   const experiences = [
-     {
+    {
       position: "Backend Engineer",
       company: "Wingify",
-      period: "July 2025 – Present",
-      description:"Started as a Backend Engineer." 
-     },
+      period: "July 2025 – Jan 2026",
+      description: "Started as a Backend Engineer."
+    },
     {
       position: "R&D Team Contributor",
       company: "Decube Innovation Labs",
-      period: "Dec 2024 – Present",
+      period: "Dec 2024 – Apr 2025",
       description:
         "Contributing to early-stage product development, and delivering client solutions in an evolving startup environment.",
     },
@@ -37,12 +37,12 @@ const ExperienceSection = () => {
     <section id="experience">
       <div className="container-section">
         <h2 className="section-heading">Professional Experience</h2>
-        
+
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Timeline line - hidden on mobile */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 hidden md:block"></div>
-            
+
             {/* Experience items */}
             <div className="space-y-12">
               {experiences.map((exp, index) => (
@@ -53,7 +53,7 @@ const ExperienceSection = () => {
                       <Briefcase className="h-5 w-5 text-primary" />
                     </div>
                   </div>
-                  
+
                   {/* Experience card */}
                   <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                     {/* Date */}
@@ -64,7 +64,7 @@ const ExperienceSection = () => {
                         </span>
                       </div>
                     </div>
-                    
+
                     {/* Content */}
                     <div className="md:w-1/2 md:pl-8">
                       <Card className="border border-gray-200 hover:border-primary/30 transition-colors">

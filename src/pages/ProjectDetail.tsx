@@ -21,6 +21,61 @@ interface Project {
 // Sample project data (in a real app, you would fetch this)
 const projectsData: Project[] = [
   {
+    id: "project4",
+    title: "AI Session Analytics Agent (MCP-Powered)",
+    purpose: `
+  At <strong>Wingify</strong>, specifically within the <strong>DACDN team</strong>, we identified a gap between raw session recording data and actionable insights.
+  <br><br>
+  The goal was to develop an <strong>intelligent agent</strong> capable of processing this data and using <strong>LLM reasoning</strong> to provide deeper understanding and analytics directly from the recordings.
+`,
+    image: "/images/ai-agent.png",
+    technologies: [
+      "MCP (Model Context Protocol)",
+      "Azure OpenAI",
+      "AgentSDK",
+      "Langfuse",
+      "Python",
+      "Typer",
+    ],
+    journey: `
+  <p>Content coming soon...</p>
+  <p><em>(This section will be updated with details about the development phases, working with AgentSDK, and integrating Azure OpenAI.)</em></p>
+`,
+    hurdles: `
+  <p>Content coming soon...</p>
+`,
+    future: `
+  <p>Content coming soon...</p>
+`,
+  },
+  {
+    id: "project5",
+    title: "Competitor's Research Tool",
+    purpose: `
+  Also at <strong>Wingify</strong>, we needed a way to automate the analysis of competitors.
+  <br><br>
+  Using <strong>MCP</strong> and <strong>FastMCP</strong>, I designed an interface that takes a competitor's URL and automatically generates a <strong>comprehensive comparative report</strong> in Google Sheets, contrasting their offerings with our product's knowledge base.
+`,
+    image: "/images/competitor-tool.png",
+    technologies: [
+      "MCP",
+      "FastMCP",
+      "Python",
+      "React",
+      "Google Sheets API",
+    ],
+    journey: `
+  <p>Content coming soon...</p>
+  <p><em>(This section will be updated with details about the automated report generation and Google Sheets API integration.)</em></p>
+`,
+    hurdles: `
+  <p>Content coming soon...</p>
+`,
+    future: `
+  <p>Content coming soon...</p>
+`,
+  },
+  {
     id: "project1",
     title: "Skia Coffee-Client Project",
     purpose: `

@@ -1,10 +1,55 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 const ProjectsSection = () => {
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   const projects = [
+    {
+      id: "project4",
+      title: "AI Session Analytics Agent (MCP-Powered)",
+      description:
+        "Developed an intelligent agent utilizing MCP tools to bridge the gap between raw session recording data and LLM reasoning.",
+      image: "/images/ai-agent.png",
+      technologies: [
+        "MCP",
+        "Azure OpenAI",
+        "AgentSDK",
+        "Langfuse",
+        "Python",
+        "Typer",
+      ],
+    },
+    {
+      id: "project5",
+      title: "Competitor's Research Tool",
+      description:
+        "Designed and developed an agentic interface that ingests a competitor’s URL and automatically generates a comprehensive comparative report in Google Sheets.",
+      image: "/images/competitor-tool.png",
+      technologies: ["MCP", "FastMCP", "Python", "React", "Google Sheets API"],
+    },
     {
       id: "project1",
       title: "Skia Coffee Client Project",
@@ -48,47 +93,77 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="bg-gray-50">
-      <div className="container-section">
-        <h2 className="section-heading">My Projects</h2>
+    <section id="projects" className="bg-gray-50 py-16">
+      <div className="container px-4 md:px-6 mx-auto">
+        <h2 className="section-heading mb-10 text-center">My Projects</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <Link
-              key={project.id}
-              to={`/project/${project.id}`}
-              className="no-underline"
-            >
-              <Card className="h-full border border-gray-200 hover:border-primary/50 hover:shadow-md transition-all flex flex-col">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform hover:scale-105"
-                  />
-                </div>
-                <CardContent className="flex-1 p-5">
-                  <h3 className="font-bold text-lg mb-2">{project.title}</h3>
-                  <p className="text-gray-700 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+        <div className="relative px-8 sm:px-12">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {projects.map((project) => (
+                <CarouselItem
+                  key={project.id}
+                  className="md:basis-1/2 lg:basis-1/3 pl-4"
+                >
+                  <div className="h-full p-1">
+                    <Link
+                      to={`/project/${project.id}`}
+                      className="no-underline block h-full"
+                    >
+                      <Card className="h-full border border-gray-200 hover:border-primary/50 hover:shadow-md transition-all flex flex-col">
+                        <div className="h-48 overflow-hidden rounded-t-lg">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <CardContent className="flex-1 p-5 flex flex-col">
+                          <h3 className="font-bold text-lg mb-2 line-clamp-1">
+                            {project.title}
+                          </h3>
+                          <p className="text-gray-700 mb-4 line-clamp-3 text-sm">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-auto">
+                            {project.technologies
+                              .slice(0, 3)
+                              .map((tech, index) => (
+                                <span
+                                  key={index}
+                                  className="text-[10px] px-2 py-1 bg-primary/10 text-primary rounded-full"
+                                >
+                                  {tech}
+                                </span>
+                              ))}
+                            {project.technologies.length > 3 && (
+                              <span className="text-[10px] px-2 py-1 bg-gray-100 text-gray-500 rounded-full">
+                                +{project.technologies.length - 3}
+                              </span>
+                            )}
+                          </div>
+                        </CardContent>
+                        <CardFooter className="border-t p-4">
+                          <div className="ml-auto text-sm font-medium text-primary flex items-center gap-1">
+                            View Details <ArrowRight className="h-3 w-3" />
+                          </div>
+                        </CardFooter>
+                      </Card>
+                    </Link>
                   </div>
-                </CardContent>
-                <CardFooter className="border-t p-4">
-                  <div className="ml-auto text-sm font-medium text-primary flex items-center gap-1">
-                    View Details <ArrowRight className="h-3 w-3" />
-                  </div>
-                </CardFooter>
-              </Card>
-            </Link>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0 sm:-left-4" />
+            <CarouselNext className="right-0 sm:-right-4" />
+          </Carousel>
         </div>
       </div>
     </section>
