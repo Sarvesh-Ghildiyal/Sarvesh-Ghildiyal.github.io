@@ -84,6 +84,13 @@ const ProjectsSection = () => {
             >
               linkedin
             </a>
+            {" · "}
+            <a
+              href="mailto:ghildiyalsarvesh@gmail.com"
+              className="link-accent text-sm"
+            >
+              or email me
+            </a>
           </p>
         </div>
       </div>

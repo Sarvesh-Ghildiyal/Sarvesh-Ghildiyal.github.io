@@ -64,15 +64,16 @@ const HomeSection = () => {
             </p>
           </div>
 
-          {/* Currently building */}
-          <div className="fade-in" style={{ animationDelay: "0.1s" }}>
+          {/* Status pills */}
+          <div className="fade-in flex flex-wrap gap-3" style={{ animationDelay: "0.1s" }}>
+            {/* Building Connecte */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/20 bg-accent/[0.05]">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent/60 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
               <span className="text-sm text-foreground/60">
-                Currently shipping{" "}
+                Building{" "}
                 <a
                   href="https://connecte.in/"
                   target="_blank"
@@ -81,7 +82,13 @@ const HomeSection = () => {
                 >
                   Connecte <ExternalLink className="h-3 w-3" />
                 </a>
-                {" "}— building a real product, real clients
+              </span>
+            </div>
+
+            {/* Open to roles */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-foreground/10 bg-foreground/[0.03]">
+              <span className="text-sm text-foreground/60">
+                Available for full-time roles
               </span>
             </div>
           </div>
@@ -89,7 +96,7 @@ const HomeSection = () => {
           {/* Recruiter pitch */}
           <div className="space-y-6 fade-in" style={{ animationDelay: "0.2s" }}>
             <p className="prose-body">
-              If I applied at your company and you've come here for my details — here you go.
+              If you're here from a job listing — welcome. Here's everything you need.
             </p>
 
             <div className="flex flex-wrap gap-3">
