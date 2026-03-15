@@ -1,42 +1,138 @@
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import ParticleBackground from "./ParticleBackground";
+import { useEffect, useState } from "react";
+import { FileText, Linkedin, Github, Mail, Phone, ArrowDown, ExternalLink } from "lucide-react";
+
+function getOSGreeting(): string {
+  const ua = navigator.userAgent;
+  if (/Android/i.test(ua)) return "Hello, Android fella";
+  if (/iPhone|iPad|iPod/i.test(ua)) return "Hello, iPhone user";
+  if (/Macintosh|Mac OS X/i.test(ua)) return "Hello, Macintosh user";
+  if (/Windows/i.test(ua)) return "Hello, Windows user";
+  if (/Linux/i.test(ua)) return "Hello, Linux hacker";
+  return "Hello, curious visitor";
+}
+
+const quickLinks = [
+  {
+    icon: <FileText className="h-4 w-4" />,
+    label: "Resume",
+    href: "/Sarvesh_Resume.pdf",
+    download: true,
+  },
+  {
+    icon: <Linkedin className="h-4 w-4" />,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/sarvesh-ghildiyal-6646b722b/",
+    external: true,
+  },
+  {
+    icon: <Github className="h-4 w-4" />,
+    label: "GitHub",
+    href: "https://github.com/Sarvesh-Ghildiyal",
+    external: true,
+  },
+  {
+    icon: <Mail className="h-4 w-4" />,
+    label: "ghildiyalsarvesh@gmail.com",
+    href: "mailto:ghildiyalsarvesh@gmail.com",
+  },
+  {
+    icon: <Phone className="h-4 w-4" />,
+    label: "+91 7017348970",
+    href: "tel:+917017348970",
+  },
+];
 
 const HomeSection = () => {
+  const [greeting, setGreeting] = useState("Hello");
+
+  useEffect(() => {
+    setGreeting(getOSGreeting());
+  }, []);
+
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-b from-background to-secondary/20">
-      <ParticleBackground />
-      <div className="container-section relative z-10">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 animate-fade-up">
-            Sarvesh Ghildiyal
-          </h1>
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Building meaningful digital products with responsibility, care, and craft.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <Button asChild size="lg" className="flex items-center gap-2">
-              <a href="#projects">
-                View Projects <ArrowRight className="h-4 w-4" />
+    <section id="home" className="min-h-screen flex items-center relative hero-glow overflow-hidden">
+      <div className="container-section w-full relative z-10">
+        <div className="max-w-2xl space-y-10">
+          {/* Greeting */}
+          <div className="fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+              {greeting}
+              <span className="text-accent">.</span>
+            </h1>
+            <p className="mt-3 text-foreground/40 text-base sm:text-lg">
+              I'm <span className="text-foreground/70 font-medium">Sarvesh Ghildiyal</span> — backend engineer, systems thinker, and builder.
+            </p>
+          </div>
+
+          {/* Currently building */}
+          <div className="fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/20 bg-accent/[0.05]">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent/60 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              </span>
+              <span className="text-sm text-foreground/60">
+                Currently shipping{" "}
+                <a
+                  href="https://connecte.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium hover:underline underline-offset-2 inline-flex items-center gap-1"
+                >
+                  Connecte <ExternalLink className="h-3 w-3" />
+                </a>
+                {" "}— building a real product, real clients
+              </span>
+            </div>
+          </div>
+
+          {/* Recruiter pitch */}
+          <div className="space-y-6 fade-in" style={{ animationDelay: "0.2s" }}>
+            <p className="prose-body">
+              If I applied at your company and you've come here for my details — here you go.
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              {quickLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  {...(link.download ? { download: true } : {})}
+                  {...(link.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-foreground/10 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all duration-200"
+                >
+                  {link.icon}
+                  <span>{link.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Teaser */}
+          <div className="fade-in" style={{ animationDelay: "0.35s" }}>
+            <p className="prose-body italic text-foreground/50">
+              Well, if you're interested in knowing me a little more…{" "}
+              <a href="#about" className="link-accent not-italic font-medium">
+                keep reading
               </a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="flex items-center gap-2">
-              <a href="#contact">
-                Contact Me <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
+              .
+            </p>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="fade-in pt-6" style={{ animationDelay: "0.5s" }}>
+            <a
+              href="#about"
+              className="inline-flex items-center gap-2 text-foreground/25 hover:text-accent transition-colors text-sm"
+            >
+              <ArrowDown className="h-4 w-4 animate-bounce" />
+              <span className="mono text-xs">scroll</span>
+            </a>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </a>
-      </div>
-      
-      <div className="absolute inset-0 bg-grid-white/10 bg-[size:3rem_3rem] pointer-events-none" aria-hidden="true" />
     </section>
   );
 };

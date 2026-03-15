@@ -1,85 +1,66 @@
-
-import { Card, CardContent } from "@/components/ui/card";
-import { Briefcase } from "lucide-react";
-
 const ExperienceSection = () => {
   const experiences = [
     {
       position: "Backend Engineer",
       company: "Wingify",
-      period: "July 2025 – Jan 2026",
-      description: "Started as a Backend Engineer."
+      period: "Jul 2025 – Jan 2026",
+      oneLiner: "Distributed infrastructure, Kafka, AI tooling with MCP & LLMs.",
     },
     {
-      position: "R&D Team Contributor",
+      position: "Founding Engineer",
       company: "Decube Innovation Labs",
-      period: "Dec 2024 – Apr 2025",
-      description:
-        "Contributing to early-stage product development, and delivering client solutions in an evolving startup environment.",
+      period: "Dec 2024 – Jul 2025",
+      oneLiner: "Early-stage product dev, first client MVP in 6 weeks.",
     },
     {
       position: "Full Stack Developer",
-      company: "Vervegen Tech Pvt Ltd",
+      company: "Vervegen Tech",
       period: "Jun 2024 – Sep 2024",
-      description:
-        "Built and maintained web applications, improved workflows, and supported secure deployments",
+      oneLiner: "CI/CD pipelines, automated deployments, 50% productivity boost.",
     },
     {
-      position: "Virtual Lab Developer Intern",
-      company: "Virtual Labs, IIT Roorkee",
+      position: "Virtual Lab Developer",
+      company: "IIT Roorkee",
       period: "Jun 2024 – Sep 2024",
-      description:
-        "Contributed to the development of virtual laboratory simulations for educational purposes.",
+      oneLiner: "Chemistry lab simulations with p5.js, Bronze Developer Certification.",
     },
   ];
 
   return (
     <section id="experience">
       <div className="container-section">
-        <h2 className="section-heading">Professional Experience</h2>
+        <h2 className="section-heading">
+          Experience<span className="text-accent">.</span>
+        </h2>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="relative">
-            {/* Timeline line - hidden on mobile */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 hidden md:block"></div>
+        <div className="max-w-2xl space-y-0">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="group relative pl-6 pb-8 last:pb-0 border-l border-foreground/10 hover:border-accent/40 transition-colors duration-300"
+            >
+              <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-foreground/15 group-hover:bg-accent transition-colors duration-300" />
 
-            {/* Experience items */}
-            <div className="space-y-12">
-              {experiences.map((exp, index) => (
-                <div key={index} className="relative">
-                  {/* Timeline dot - centered on mobile */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -mt-2 flex items-center justify-center">
-                    <div className="bg-white p-1 rounded-full border-2 border-primary">
-                      <Briefcase className="h-5 w-5 text-primary" />
-                    </div>
-                  </div>
-
-                  {/* Experience card */}
-                  <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                    {/* Date */}
-                    <div className="md:w-1/2 flex justify-center md:justify-end md:pr-8 pb-4 md:pb-0 pt-8 md:pt-0">
-                      <div className="md:text-right">
-                        <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                          {exp.period}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="md:w-1/2 md:pl-8">
-                      <Card className="border border-gray-200 hover:border-primary/30 transition-colors">
-                        <CardContent className="p-5">
-                          <h3 className="font-bold text-lg">{exp.position}</h3>
-                          <p className="text-primary font-medium">{exp.company}</p>
-                          <p className="mt-2 text-gray-700">{exp.description}</p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
+              <div className="space-y-1">
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-3">
+                  <h3 className="text-base font-semibold text-foreground/90">
+                    {exp.position}
+                  </h3>
+                  <span className="text-accent text-sm font-medium">
+                    @ {exp.company}
+                  </span>
                 </div>
-              ))}
+
+                <span className="mono text-xs text-foreground/30 block">
+                  {exp.period}
+                </span>
+
+                <p className="text-sm text-foreground/50 leading-relaxed pt-0.5">
+                  {exp.oneLiner}
+                </p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

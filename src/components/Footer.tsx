@@ -1,63 +1,50 @@
-import { Link } from "react-router-dom";
-import { Linkedin, FileText } from "lucide-react"; // Removed Twitter and MessageCircle
-import { FaXTwitter } from "react-icons/fa6"; // for the X (Twitter) logo
-import { RiDiscordLine } from "react-icons/ri"; // for the Discord logo
+import { Linkedin } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
+import { RiDiscordLine } from "react-icons/ri";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const socialLinks = [
+    {
+      icon: <Linkedin className="h-4 w-4" />,
+      href: "https://www.linkedin.com/in/sarvesh-ghildiyal-6646b722b/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaXTwitter className="h-4 w-4" />,
+      href: "https://twitter.com/ghildiyal_sarv",
+      label: "X",
+    },
+    {
+      icon: <RiDiscordLine className="h-4 w-4" />,
+      href: "https://discord.com/users/sarvesh0925",
+      label: "Discord",
+    },
+  ];
+
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row md:justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <Link to="/" className="text-lg font-bold text-primary">
-              Sarvesh Ghildiyal
-            </Link>
-            <p className="text-sm text-gray-600 mt-1">
-              Building meaningful digital products
-            </p>
-          </div>
-
-          <div className="flex space-x-4">
-            <a
-              href="https://www.linkedin.com/in/sarvesh-ghildiyal-6646b722b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a
-              href="https://twitter.com/ghildiyal_sarv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-            >
-              <FaXTwitter className="h-5 w-5" />
-            </a>
-            <a
-              href="https://discord.com/users/sarvesh0925"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-            >
-              <RiDiscordLine className="h-5 w-5" />
-            </a>
-            <a
-              href="/Sarvesh-Ghildiyal-Resume.pdf"
-              download
-              className="text-gray-500 hover:text-primary transition-colors"
-            >
-              <FileText className="h-5 w-5" />
-            </a>
-          </div>
-        </div>
-
-        <div className="mt-8 border-t border-gray-200 pt-4">
-          <p className="text-center text-sm text-gray-500">
-            © {currentYear} Sarvesh Ghildiyal. All rights reserved.
+    <footer className="border-t border-foreground/5">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8 py-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-foreground/30">
+            © {currentYear} Sarvesh Ghildiyal
           </p>
+
+          <div className="flex items-center gap-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                className="text-foreground/25 hover:text-accent transition-colors duration-200"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
