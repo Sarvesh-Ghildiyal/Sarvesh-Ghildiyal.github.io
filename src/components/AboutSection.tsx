@@ -31,7 +31,7 @@ const AboutSection = () => {
           <p className="prose-body">
             I dream of working at the intersection of{" "}
             <span className="text-accent font-medium">Cognitive Science & AI</span> —
-            understanding how minds work, and how machines might learn to do the same.
+            understanding how minds work, and <em>how each can inform the other.</em>
           </p>
 
           <p className="prose-body">
