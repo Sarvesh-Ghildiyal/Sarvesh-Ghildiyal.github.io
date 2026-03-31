@@ -96,7 +96,7 @@ const HomeSection = () => {
           {/* Recruiter pitch */}
           <div className="space-y-6 fade-in" style={{ animationDelay: "0.2s" }}>
             <p className="prose-body">
-              If you're here from a job listing — welcome. Here's everything you need.
+              If I asked you to hire me — welcome. Click to Download.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -120,9 +120,9 @@ const HomeSection = () => {
           {/* Teaser */}
           <div className="fade-in" style={{ animationDelay: "0.35s" }}>
             <p className="prose-body italic text-foreground/50">
-              Well, if you're interested in knowing me a little more…{" "}
+              Well, in case you're interested to know me a little more…{" "}
               <a href="#about" className="link-accent not-italic font-medium">
-                keep reading
+                please keep reading
               </a>
               .
             </p>
