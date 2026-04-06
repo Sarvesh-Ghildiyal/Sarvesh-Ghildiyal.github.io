@@ -51,9 +51,9 @@ const ExperienceSection = () => {
                   </span>
                 </div>
 
-                <span className="mono text-xs text-foreground/30 block">
+                <time className="mono text-xs text-foreground/30 block">
                   {exp.period}
-                </span>
+                </time>
 
                 <p className="text-sm text-foreground/50 leading-relaxed pt-0.5">
                   {exp.oneLiner}

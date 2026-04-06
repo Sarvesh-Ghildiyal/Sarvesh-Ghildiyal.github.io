@@ -72,6 +72,7 @@ const ProjectsSection = () => {
               href="/Sarvesh_Resume.pdf"
               download
               className="link-accent text-sm"
+              aria-label="Download Sarvesh Resume"
             >
               resume
             </a>
@@ -81,6 +82,7 @@ const ProjectsSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="link-accent text-sm"
+              aria-label="Visit LinkedIn Profile"
             >
               linkedin
             </a>
@@ -88,6 +90,7 @@ const ProjectsSection = () => {
             <a
               href="mailto:ghildiyalsarvesh@gmail.com"
               className="link-accent text-sm"
+              aria-label="Send Email"
             >
               or email me
             </a>

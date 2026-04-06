@@ -109,6 +109,7 @@ const HomeSection = () => {
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-foreground/10 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all duration-200"
+                  aria-label={`Link to ${link.label}`}
                 >
                   {link.icon}
                   <span>{link.label}</span>
