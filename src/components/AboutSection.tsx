@@ -26,13 +26,13 @@ const AboutSection = () => {
           </p>
 
           <p className="prose-body">
-            I dream of working in{" "}
+            I want to work in{" "}
             <span className="text-accent font-medium">AI core fundamentals</span> —
             not just using models, but understanding and building them from the ground up.
           </p>
 
           <p className="prose-body">
-            I dream of working at the intersection of{" "}
+            I want to contribute at the intersection of{" "}
             <span className="text-accent font-medium">Cognitive Science & AI</span> —
             understanding how minds work, and <em>how one can inform the other.</em>
           </p>
