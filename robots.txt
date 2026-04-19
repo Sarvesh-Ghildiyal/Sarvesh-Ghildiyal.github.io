@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://sarvesh-ghildiyal.github.io/sitemap.xml
