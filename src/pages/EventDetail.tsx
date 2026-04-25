@@ -54,7 +54,7 @@ const eventsData: Event[] = [
       "<strong>Event 3 – Graphic Era Hill University:</strong> Addressed an external audience on <em>test networks (Sepolia)</em>, <em>consensus mechanisms</em> (PoW, PoS), wallet fundamentals, and mentored hands-on smart contract deployment.",
     ],
     outcomes:
-      "<p>Gained <strong>substantial real-world experience</strong> in <em>event management, public speaking, and team coordination</em>. Beyond the technical and organizational growth, I had the privilege of meeting <strong>inspiring individuals</strong>, forging meaningful connections, and <em>immersing myself in a vibrant ecosystem of ideas and aspirations</em>. These experiences <u>reshaped my worldview</u>, broadened my horizons, and kindled a deeper sense of purpose — they didn’t just teach me how to build, they taught me how to dream.</p>",
+      "<p>Gained <strong>substantial real-world experience</strong> in <em>event management, public speaking, and team coordination</em>. Beyond the technical and organizational growth, I had the privilege of meeting <strong>inspiring individuals</strong>, forging meaningful connections, and <em>immersing myself in a vibrant ecosystem of ideas and aspirations</em>. These experiences <u>reshaped my worldview</u>, broadened my horizons, and kindled a deeper sense of purpose. They didn’t just teach me how to build, they taught me how to dream.</p>",
   },
   {
     id: "event2",
@@ -64,17 +64,17 @@ const eventsData: Event[] = [
     description:
       "Led a beginner team in my first-ever 48-hour hackathon and emerged victorious with a real-world sustainability solution.",
     fullDescription:
-      "<p>This was my <strong>first-ever hackathon experience</strong>, held at UPES, and it unfolded on the insistence of a senior, Balendu, who encouraged me to participate despite my limited development knowledge. That invitation turned into a pivotal moment — I took on the role of team leader, and we successfully passed the initial selection round. Spending the night on a different campus, collaborating intensively to transform our idea into a viable solution, remains <em>one of the most formative experiences</em> of my early career. It wasn’t just about coding — it was about learning how to work under pressure, trust a team, and believe in potential before perfection.</p>",
+      "<p>This was my <strong>first-ever hackathon experience</strong>, held at UPES, and it unfolded on the insistence of a senior, Balendu, who encouraged me to participate despite my limited development knowledge. That invitation turned into a pivotal moment; I took on the role of team leader, and we successfully passed the initial selection round. Spending the night on a different campus, collaborating intensively to transform our idea into a viable solution, remains <em>one of the most formative experiences</em> of my early career. It wasn’t just about coding; it was about learning how to work under pressure, trust a team, and believe in potential before perfection.</p>",
     images: ["/images/events/event2/2.jpeg", "/images/events/event2/3.jpg"],
     highlights: [
-      "First hackathon experience for the entire team — we stepped in with curiosity, not credentials",
+      "First hackathon experience for the entire team; we stepped in with curiosity, not credentials",
       "Led a team of complete beginners, learning and building everything from scratch",
       "Discovered the open, collaborative, and welcoming culture of hackathons",
       "Bonded over late-night brainstorming, debugging, and shared imposter syndrome",
       "Formed lasting connections and memories that transcended the competition itself",
     ],
     outcomes:
-      "<p>A <strong>beautiful memory</strong> of shared curiosity, late-night laughter, and spontaneous learning. It was less about winning and more about the joy of building something together — an experience that still brings a smile whenever I think back to it.</p>",
+      "<p>A <strong>beautiful memory</strong> of shared curiosity, late-night laughter, and spontaneous learning. It was less about winning and more about the joy of building something together, an experience that still brings a smile whenever I think back to it.</p>",
   },
   {
     id: "event3",
@@ -84,7 +84,7 @@ const eventsData: Event[] = [
     description:
       "Initiated the foundation of a college tech club to give back and uplift the next batch of learners.",
     fullDescription:
-      "<p>This was the <strong>starting point of our tech community</strong> at THDC IHET. I initiated the idea with a desire to contribute back to the college ecosystem that shaped me. The journey involved <em>planning the structure, curriculum, and long-term vision</em> for a self-sustaining club. I collaborated with peers, held meetings with our Head of Department and Director Sir, and worked on aligning the initiative with the department's goals. The energy, the intent, and the discussions — they all remain <u>deeply etched</u> in my memory.</p>",
+      "<p>This was the <strong>starting point of our tech community</strong> at THDC IHET. I initiated the idea with a desire to contribute back to the college ecosystem that shaped me. The journey involved <em>planning the structure, curriculum, and long-term vision</em> for a self-sustaining club. I collaborated with peers, held meetings with our Head of Department and Director Sir, and worked on aligning the initiative with the department's goals. The energy, the intent, and the discussions; they all remain <u>deeply etched</u> in my memory.</p>",
     images: [
       "/images/events/event3/logo.jpeg",
       "/images/events/event3/one.jpeg",

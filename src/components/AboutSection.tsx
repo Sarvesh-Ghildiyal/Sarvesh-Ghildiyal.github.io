@@ -18,22 +18,22 @@ const AboutSection = () => {
 
           <p className="prose-body">
             I definitely like <span className="text-accent font-medium">Software</span>. 
-            The small dopamine hits I get — once I learn and understand something new 
+            The small dopamine hits I get, once I learn and understand something new 
             that I never did before, and the challenge to actually use that <em>information</em>.
-            {/* The craft of it — the architecture,
+            {/* The craft of it, the architecture,
             the elegance of a well-designed system, the satisfaction of software
             as <em>experience</em>. */}
           </p>
 
           <p className="prose-body">
             I want to work in{" "}
-            <span className="text-accent font-medium">AI core fundamentals</span> —
+            <span className="text-accent font-medium">AI core fundamentals</span>:
             not just using models, but understanding and building them from the ground up.
           </p>
 
           <p className="prose-body">
             I want to contribute at the intersection of{" "}
-            <span className="text-accent font-medium">Cognitive Science & AI</span> —
+            <span className="text-accent font-medium">Cognitive Science & AI</span>:
             understanding how minds work, and <em>how one can inform the other.</em>
           </p>
 
@@ -81,7 +81,7 @@ const AboutSection = () => {
                   world the web. Satoshi Nakamoto published a whitepaper and proposed an entirely new
                   model of human trust. A small team wrote{" "}
                   <em className="text-foreground/70">Attention Is All You Need</em> and rewired how
-                  machines process language. These weren't grand plans — they were people who saw
+                  machines process language. These weren't grand plans; they were people who saw
                   something and built it.
                 </p> */}
 
@@ -90,17 +90,17 @@ const AboutSection = () => {
                   World Wide Web. Satoshi Nakamoto published a whitepaper and proposed an entirely new
                   model of human trust. A small team wrote{" "}
                   <em className="text-foreground/70">Attention Is All You Need</em> and rewired how
-                  machines process language. These weren't grand plans — they were people who saw
+                  machines process language. These weren't grand plans; they were people who saw
                   something and built it.
                 </p>
 
                 {/* <p className="prose-body">
                   What excites me today is raw and specific. Claude Code changing how engineers
                   interact with their codebases. OpenAI and Anthropic pushing what's possible with
-                  language. India's own ecosystem —{" "}
-                  <span className="text-foreground/70">Wingify, Partex, Sarvam, BrainSightAI, SimpliSmart, Anakin etc</span> — doing
+                  language. India's own ecosystem,{" "}
+                  <span className="text-foreground/70">Wingify, Partex, Sarvam, BrainSightAI, SimpliSmart, Anakin etc</span>, doing
                   serious work quietly. Brain mapping and cognitive neuroscience slowly cracking how
-                  biological intelligence actually works. And then the wilder stuff — an XR suit that
+                  biological intelligence actually works. And then the wilder stuff: an XR suit that
                   lets you feel a VR environment, imagine playing something like Ben 10 and actually feeling the
                   transformation. That's not fantasy, that's just an engineering problem waiting to be solved.
                 </p> */}
@@ -113,30 +113,30 @@ const AboutSection = () => {
                       <p className="prose-body italic text-foreground/70">
                         &quot;If experts say something might happen in 10–20 years, then it’s not fantasy. It’s just not here yet.&quot;
                       </p>
-                      <footer className="mt-2 text-sm text-foreground/40">— Sabine Hossenfelder</footer>
+                      <footer className="mt-2 text-sm text-foreground/40">- Sabine Hossenfelder</footer>
                     </blockquote>
                   </div>
 
                   <p className="prose-body">
                     Big firms publishing reports on how the human landscape is going to change. Claude Code, OpenAI, Anthropic
-                    making yesterday&apos;s fantasy into today&apos;s reality. Our own Indian ecosystem standing up —{" "}
-                    <span className="text-foreground/70">Wingify, Partex, Sarvam, Socket, BrainSightAI, SimpliSmart, Anakin etc</span> — doing
+                    making yesterday&apos;s fantasy into today&apos;s reality. Our own Indian ecosystem standing up,{" "}
+                    <span className="text-foreground/70">Wingify, Partex, Sarvam, Socket, BrainSightAI, SimpliSmart, Anakin etc</span>, doing
                     serious work.
                   </p>
 
                   <p className="prose-body">
                     Brain mapping and cognitive neuroscience slowly cracking how
-                    biological intelligence actually works. And then the crazy stuff — an XR suit that
+                    biological intelligence actually works. And then the crazy stuff: an XR suit that
                     lets you feel a VR environment, imagine playing something like Ben 10 and actually feeling the
                     transformation. That&apos;s not fantasy, that&apos;s just an engineering problem waiting to be solved.
                   </p>
 
                 <p className="prose-body font-medium text-foreground/70">
-                  This is the world being built right now. And I want to be in it — not watching it.
+                  This is the world being built right now. And I want to be in it, not watching it.
                 </p>
 
                 <p className="prose-body">
-                  And yeah — In terms of making money, I see a huge opportunity in domain of{" "}
+                  And yeah, in terms of making money, I see a huge opportunity in domain of{" "}
                   <a
                     href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-agentic-commerce-opportunity-how-ai-agents-are-ushering-in-a-new-era-for-consumers-and-merchants"
                     target="_blank"

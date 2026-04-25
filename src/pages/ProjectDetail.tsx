@@ -79,7 +79,7 @@ const projectsData: Project[] = [
     id: "project1",
     title: "Skia Coffee-Client Project",
     purpose: `
-  At <strong>Decube</strong>, we received an <strong>exciting opportunity</strong> — a chance to deliver for a <strong>real-world client</strong>. 
+  At <strong>Decube</strong>, we received an <strong>exciting opportunity</strong>, a chance to deliver for a <strong>real-world client</strong>. 
   <br><br>
   <strong>Ashish</strong>, the owner of a coffee business in <strong>Bangalore</strong>, approached us with a clear <em>vision</em>: 
   to <strong>digitize his operations</strong> and serve his clientele more efficiently. 
@@ -105,7 +105,7 @@ const projectsData: Project[] = [
   
   I took <strong>the responsibility</strong> for building the admin portal, with others joining later. 
   Being in an <em>early-stage environment</em>, I had the liberty to <strong>choose the tech stack</strong>. 
-  After careful consideration, I decided on <strong>Vue.js</strong> for the frontend — my first experience with it — and <strong>Firebase</strong> for the backend.
+  After careful consideration, I decided on <strong>Vue.js</strong> for the frontend (my first experience with it) and <strong>Firebase</strong> for the backend.
   <br><br>
 
   <em>Learning</em> was given priority over mere delivery. I started with the official <strong>Vue.js documentation</strong> and <strong>Vue School tutorials</strong>. 
@@ -114,13 +114,13 @@ const projectsData: Project[] = [
   <br><br>
 
   As the project progressed, I was introduced to <strong>ShadCN-Vue</strong>. 
-  Observing how an experienced developer from Bangalore delivered a <strong>shared UI</strong> in a single day — something that took me a week — 
+  Observing how an experienced developer from Bangalore delivered a <strong>shared UI</strong> in a single day, something that took me a week, 
   motivated me to focus deeply on <strong>pixel-perfect implementation</strong> and <strong>efficient development practices</strong>.
   <br><br>
 
-  After weeks of refining the UI, I transitioned to backend integrations — <strong>authentication</strong> (using phone number sign-in), 
+  After weeks of refining the UI, I transitioned to backend integrations: <strong>authentication</strong> (using phone number sign-in), 
   <strong>Firestore database</strong> operations, <strong>hosting</strong>, and writing <strong>cloud functions</strong> for backend jobs. 
-  Backend tasks came naturally to me, and a special thanks to <strong>Sheersh</strong> for being there — often even at 3 AM — to guide me through technical queries.
+  Backend tasks came naturally to me, and a special thanks to <strong>Sheersh</strong> for being there, often even at 3 AM, to guide me through technical queries.
 `,
     hurdles: `
   The timeline allotted for the project was approximately <strong>three months</strong>. 
@@ -139,7 +139,7 @@ const projectsData: Project[] = [
   allowing me the necessary breathing room to complete development without undue pressure.
   <br><br>
 
-  Toward the final phase, <strong>Divy</strong> joined the team — a dedicated fella. 
+  Toward the final phase, <strong>Divy</strong> joined the team, a dedicated fella. 
   I took on the added responsibility of <strong>project management</strong>, using <strong>GitHub Projects</strong> for tracking tasks and delegating various functional modules to Divy. 
   His contribution proved valuable in tying up loose ends efficiently.
 `,
@@ -157,13 +157,13 @@ const projectsData: Project[] = [
     id: "project2",
     title: "Cieszyc Web App",
     purpose: `
-  <strong>Cieszyc 2024</strong> was our college’s first fest after a gap of nearly five years — delayed due to COVID and other administrative reasons. 
+  <strong>Cieszyc 2024</strong> was our college’s first fest after a gap of nearly five years, delayed due to COVID and other administrative reasons. 
   The preparations were electric, and as part of the organizing effort, a dedicated <strong>web app</strong> was needed to handle <strong>ticketing, event schedules</strong>, 
   and <strong>submission forms</strong> for event participation and payment.
   <br><br>
   The fest committee collaborated with <strong>Spiders.co.in</strong>, a company run by an alumnus from the 2020 batch. 
   They provided the backend support but needed someone on the ground to implement college-specific requirements. 
-  That’s where <strong>Ravinder</strong> and I came in — known in our college circles for our development work and being the only two familiar with <strong>Laravel</strong>, the framework the project was built on.
+  That’s where <strong>Ravinder</strong> and I came in, known in our college circles for our development work and being the only two familiar with <strong>Laravel</strong>, the framework the project was built on.
 `,
 
     image: "/images/cieszyc.png",
@@ -178,23 +178,23 @@ const projectsData: Project[] = [
   We were provided with a Laravel-based project template and a shared hosting account by Spiders.co.in. 
   From there, <strong>Ravinder and I</strong> dove into the prewritten codebase, analyzing, modifying, and extending it to suit our fest's unique needs. 
   <br><br>
-  The timeline was tight — within a week, we had to <strong>understand unfamiliar code</strong>, <strong>gather functional requirements</strong>, and 
+  The timeline was tight. Within a week, we had to <strong>understand unfamiliar code</strong>, <strong>gather functional requirements</strong>, and 
   <strong>implement new features</strong> without compromising stability.
   <br><br>
   Despite the crunch, we delivered. One personal milestone during this phase was resolving a bug in the existing <strong>navigation bar logic</strong>. 
-  Though not critical, I noticed a flaw in how routes were being handled — written by someone already in the software industry. 
+  Though not critical, I noticed a flaw in how routes were being handled, written by someone already in the software industry. 
   Fixing that gave me a real sense of accomplishment.
 `,
 
     hurdles: `
-  Surprisingly, there were no major roadblocks. I genuinely <em>enjoyed</em> working on this — contributing something tangible for my college. 
+  Surprisingly, there were no major roadblocks. I genuinely <em>enjoyed</em> working on this, contributing something tangible for my college. 
   It felt personal, and in many ways, it reinforced my passion for building things that matter. 
   <br><br>
   This experience helped shape who I am today, not just as a developer but as someone who enjoys delivering under pressure, for a cause that means something.
 `,
     future: `
   With the fest concluded during our <strong>seventh semester</strong>, we’ve handed off the baton to our juniors. 
-  Our work laid a foundation — a tradition, even — for how digital infrastructure around college events can be handled going forward. 
+  Our work laid a foundation, a tradition, even, for how digital infrastructure around college events can be handled going forward. 
   <br><br>
   While our direct involvement may no longer be needed, I remain open to helping in the future, should the next team ever need guidance.
 `,
@@ -205,9 +205,9 @@ const projectsData: Project[] = [
     title: "Complaint Managment System",
     purpose: `
   During my early days in college, eager to learn and build something meaningful, my assistant professor approached me with a project. 
-  He asked, “Sarvesh, can you and your friends deliver this to a client?” I said yes — even though my seniors did the actual delivery, and I had little knowledge of development.
+  He asked, “Sarvesh, can you and your friends deliver this to a client?” I said yes, even though my seniors did the actual delivery, and I had little knowledge of development.
   <br><br>
-  As a follow-up, he offered me a college-level internal project. Not wanting to lose the opportunity, I said yes again — and so began my journey into <strong>Laravel</strong>.
+  As a follow-up, he offered me a college-level internal project. Not wanting to lose the opportunity, I said yes again, and so began my journey into <strong>Laravel</strong>.
 `,
     image: "/images/cms.png",
     technologies: [
@@ -223,32 +223,32 @@ const projectsData: Project[] = [
   <br><br>
   I attempted to seek help from peers, but being in the second year, no one around me was equipped to handle Laravel. 
   Still, I didn’t back down. I reached out to contacts at <strong>Colored Cow</strong>, an incubation group on campus known for working with Laravel. 
-  I had joined them earlier for a short internship and training — and remembered <strong>Laracasts</strong>.
+  I had joined them earlier for a short internship and training, and remembered <strong>Laracasts</strong>.
   <br><br>
-  So I began — from scratch — diving deep into Laravel documentation, watching tutorials, and experimenting with every line of code. 
+  So I began, from scratch, diving deep into Laravel documentation, watching tutorials, and experimenting with every line of code. 
   That decision, although lonely and uncertain at first, became the defining point of my development career.
 `,
     hurdles: `
   The hurdles were plenty. I had no guidance, no collaborative team, and no prior exposure to Laravel or MVC architecture.
-  But those very constraints became my biggest teachers. I learned <strong>routing, controllers, database interactions, middleware, authentication, authorization</strong> — 
+  But those very constraints became my biggest teachers. I learned <strong>routing, controllers, database interactions, middleware, authentication, authorization</strong>... 
   and yes, what <strong>Spatie</strong> packages are and why they matter.
   <br><br>
   I also explored frontend tools like <strong>vanilla CSS</strong>, <strong>Bootstrap</strong>, and <strong>Tailwind</strong>, integrating them into the project.
   The system required <strong>role-based access control</strong>, so I had to study how Laravel handles user roles, guards, and policies.
   <br><br>
-  Despite the struggle, I managed to deliver a minimal working prototype — and gained a deep, working knowledge of how robust web applications are built.
+  Despite the struggle, I managed to deliver a minimal working prototype, and gained a deep, working knowledge of how robust web applications are built.
   <br><br>
-  One insight I appreciated: Laravel surfaces the structure. It makes you aware of everything — unlike some JS stacks that hide complexity under convention.
+  One insight I appreciated: Laravel surfaces the structure. It makes you aware of everything, unlike some JS stacks that hide complexity under convention.
 `,
     future: `
   Looking back, I should have pursued a deeper internship with <strong>Colored Cow</strong>. It would’ve helped me accelerate, but hindsight is always clear.
-  Still, the road I took shaped me — no regrets.
+  Still, the road I took shaped me. No regrets.
   <br><br>
-  After delivering the MVP in Laravel, I was introduced to <strong>blockchain</strong> development. That led me into <strong>JavaScript</strong> — a domain I hadn’t touched yet.
+  After delivering the MVP in Laravel, I was introduced to <strong>blockchain</strong> development. That led me into <strong>JavaScript</strong>, a domain I hadn’t touched yet.
   <br><br>
   Even to this day, I somehow remain a <strong>full-stack JavaScript developer</strong>, yet to get my hands truly dirty with blockchain development.
   <br><br>
-  Soon after, I discovered <strong>RemixJS</strong>. I chose it over Next.js simply because its routing style felt familiar — reminiscent of Laravel. 
+  Soon after, I discovered <strong>RemixJS</strong>. I chose it over Next.js simply because its routing style felt familiar, reminiscent of Laravel. 
   This allowed me to <strong>rebuild the entire CMS</strong> in Remix, applying my Laravel experience to a JS ecosystem.
   <br><br>
   The switch between stacks wasn’t overwhelming because I had a strong foundation in <strong>C programming and DSA</strong> from my first year. 

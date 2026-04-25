@@ -47,7 +47,7 @@
     scroll-behavior: smooth;
   }
 
-  /* Terminal theme — green */
+  /* Terminal theme: green */
   [data-theme="terminal"] {
     --primary: 142 71% 45%;
     --primary-foreground: 0 0% 4%;
@@ -61,7 +61,7 @@
     --theme-glow-via: hsla(160, 60%, 25%, 0.04);
   }
 
-  /* Ocean theme — sky blue */
+  /* Ocean theme: sky blue */
   [data-theme="ocean"] {
     --primary: 199 89% 48%;
     --primary-foreground: 0 0% 4%;
@@ -75,7 +75,7 @@
     --theme-glow-via: hsla(210, 70%, 30%, 0.04);
   }
 
-  /* Rosé theme — warm pink */
+  /* Rosé theme: warm pink */
   [data-theme="rose"] {
     --primary: 347 77% 64%;
     --primary-foreground: 0 0% 4%;

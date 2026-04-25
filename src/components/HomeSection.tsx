@@ -60,7 +60,7 @@ const HomeSection = () => {
               <span className="text-accent">.</span>
             </h1>
             <p className="mt-3 text-foreground/40 text-base sm:text-lg">
-              I'm <span className="text-foreground/70 font-medium">Sarvesh Ghildiyal</span> — backend engineer, systems thinker, and builder.
+            I'm <span className="text-foreground/70 font-medium">Sarvesh Ghildiyal</span>, Backend & AI Engineer.
             </p>
           </div>
 
@@ -85,6 +85,17 @@ const HomeSection = () => {
               </span>
             </div>
 
+            {/* Recent thought */}
+            <a
+              href="https://www.linkedin.com/posts/sarvesh-ghildiyal_okay-a-question-to-the-connections-you-share-7453700118739877888-FuFS/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-foreground/10 bg-foreground/[0.03] hover:border-accent/40 hover:text-accent transition-all duration-200"
+            >
+              <span className="text-sm text-foreground/60">A recent thought</span>
+              <ExternalLink className="h-3 w-3 text-foreground/40" />
+            </a>
+            
             {/* Open to roles */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-foreground/10 bg-foreground/[0.03]">
               <span className="text-sm text-foreground/60">
@@ -96,7 +107,7 @@ const HomeSection = () => {
           {/* Recruiter pitch */}
           <div className="space-y-6 fade-in" style={{ animationDelay: "0.2s" }}>
             <p className="prose-body">
-              If I asked you to hire me — welcome. Click to Download.
+              If I asked you to hire me, welcome. Click to Download.
             </p>
 
             <div className="flex flex-wrap gap-3">
